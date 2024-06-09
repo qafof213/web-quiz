@@ -224,7 +224,6 @@ function selectAnswer(selectedAnswerIndex, shuffledAnswers) {
         selectedBtn.classList.add("incorrect");
     } if(!isCorrect){
         incorrect_answers.push(questions[currentQuestionIndex])
-        console.log(incorrect_answers)
         
         
     }
@@ -295,6 +294,7 @@ backButton.addEventListener("click", () => {
 });
 
 
+console.log(incorrect_answers);
 let currentQuestionindex = 0;
 const questionsContainer = document.getElementById('questions-container');
 const showIncorrectAnswersButton = document.getElementById('show-incorrect-answers');

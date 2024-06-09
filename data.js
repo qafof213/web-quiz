@@ -1,14 +1,16 @@
 
 async function tmp(){
-    let data =await fetch('./m.txt');
+    let data =await fetch('./kritik.txt');
     data=await data.text();
     return data
 }
 
 
     let test = await tmp();
+    test = test.replace(/A\)/g, ' •').replace(/B\)/g, ' •').replace(/C\)/g, ' •').replace(/D\)/g, ' •').replace(/E\)/g, ' •');
     let true_false = [];
     let arr = test.split('\n').filter(line => line.trim());
+    
     let questions = [];
     let answers = [];
     let i = 0;
