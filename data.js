@@ -1,6 +1,6 @@
 
 async function tmp(){
-    let data =await fetch('./question.txt');
+    let data =await fetch('./question1.txt');
     data=await data.text();
     return data
 }
